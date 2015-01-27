@@ -1,0 +1,10 @@
+body {
+	text-align: center;
+	font-family: Arial;
+}
+h2 {
+	margin-bottom: 50px;
+}
+canvas#drawn-canvas {
+	border: solid 1px black;
+}
