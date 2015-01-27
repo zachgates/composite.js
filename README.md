@@ -5,8 +5,8 @@
 ##Setting Up The Canvas
 ```html
 <canvas id="mycavas"        // set a unique id
-		width="504"         // set the width  (x-axis)
-		height="360"        // set the height (y-axis)
+		width="100"         // set the width  (x-axis)
+		height="100"        // set the height (y-axis)
 		
 		// set any other attributes below
 		style="border: solid 1px black;"> 
