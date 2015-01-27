@@ -2,6 +2,17 @@
 * used to trace lines
 * strictly javascript approach
 
+##Setting Up The Canvas
+```html
+<canvas id="drawn-canvas"   // set a unique id
+		width="504"         // set the width  (x-axis)
+		height="360"        // set the height (y-axis)
+		
+		// set any other attributes below
+		style="border: solid 1px black;"> 
+</canvas>
+```
+
 ##Basic Usage — Single line
 ```javascript
 var context = document.getElementById('mycanvas').getContext('2d');  // set canvas' context variable
