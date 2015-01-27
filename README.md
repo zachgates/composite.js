@@ -1,6 +1,6 @@
 # Composite — Module used to draw lines on canvas from points
-*used to trace lines
-*strictly javascript approach
+* used to trace lines
+* strictly javascript approach
 
 ##Basic Usage — Single line
 ```javascript
