@@ -25,11 +25,12 @@ draw({
 	},
 	context,  // canvas' context
 	0,        // points' circle radius
-	1         // line width
+	1,        // line width
+	false     // fill color
 );
 ```
 
-##Basic Usage — Multiple lines
+##Basic Usage — Multiple lines at once
 ```javascript
 var context = document.getElementById('mycanvas').getContext('2d');  // set canvas' context variable
 draw({
@@ -47,6 +48,56 @@ draw({
 	},
 	context,  // canvas' context
 	0,        // points' circle radius
-	1         // line width
+	1,        // line width
+	false     // fill color
+);
+```
+
+##Basic Usage — Multiple lines seperately
+```javascript
+var context = document.getElementById('mycanvas').getContext('2d');  // set canvas' context variable
+draw({
+		black:                     // line name
+		{ color: "#000000",        // set line color
+				x: [0.0, 5.0],     // set x coordinates
+				y: [0.0, 5.0],     // set y coordinates
+		},
+	},
+	context,  // canvas' context
+	0,        // points' circle radius
+	1,        // line width
+	false     // fill color
+);
+draw({
+		blue:                      // line name
+		{ color: "#0000FF",        // set line color
+				x: [5.0, 0.0],     // set x coordinates
+				y: [5.0, 5.0],     // set y coordinates
+		},
+	},
+	context,  // canvas' context
+	0,        // points' circle radius
+	1,        // line width
+	false     // fill color
+);
+```
+
+##Basic Usage — Filling between lines
+```javascript
+draw({
+		black:                     // line name
+		{ color: "#000000",        // set line color
+		// make a full loop starting and ending
+		// with the same coordinates
+				x: [0.0, 5.0, 5.0, 0.0],     // set x coordinates
+				y: [0.0, 5.0, 0.0, 0.0],     // set y coordinates
+		},
+	},
+	context,  // canvas' context
+	0,        // points' circle radius
+	1,        // line width
+	// set a color to fill between
+	// all of the connected lines
+	false     // fill color
 );
 ```
