@@ -17,7 +17,7 @@ function draw(data, ctx, radius, lineWidth, fill){
 		}
 		if (fill != false){
 			ctx.fillStyle = fill;
-			ctx.fill()
+			ctx.fill();
 		}
 		ctx.strokeStyle = data[key].color;
 		ctx.stroke();
