@@ -1,4 +1,4 @@
-function draw(data, ctx, radius, lineWidth){
+function draw(data, ctx, radius, lineWidth, fill){
 	ctx.lineJoin = 'round';
 	for(var key in data){
 		var x = data[key].x;
@@ -14,6 +14,10 @@ function draw(data, ctx, radius, lineWidth){
 		ctx.moveTo(x[0], y[0]);
 		for (i = 1; i < x.length; i++){
 			ctx.lineTo(x[i], y[i]);
+		}
+		if (fill != false){
+			ctx.fillStyle = fill;
+			ctx.fill()
 		}
 		ctx.strokeStyle = data[key].color;
 		ctx.stroke();
