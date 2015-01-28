@@ -87,17 +87,20 @@ draw({
 draw({
 		black:                     // line name
 		{ color: "#000000",        // set line color
+		
 		// make a full loop starting and ending
 		// with the same coordinates
 				x: [0.0, 5.0, 5.0, 0.0],     // set x coordinates
 				y: [0.0, 5.0, 0.0, 0.0],     // set y coordinates
 		},
+		
 	},
 	context,  // canvas' context
 	0,        // points' circle radius
 	1,        // line width
+	
 	// set a color to fill between
 	// all of the connected lines
-	false     // fill color
+	'#FF0000' // red
 );
 ```
