@@ -4,7 +4,7 @@
 
 ##Setting Up The Canvas
 ```html
-<canvas id="mycavas"        // set a unique id
+<canvas id="mycanvas"        // set a unique id
 		width="100"         // set the width  (x-axis)
 		height="100"        // set the height (y-axis)
 		
